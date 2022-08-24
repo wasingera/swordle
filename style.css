@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    touch-action: manipulation;
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.title {
+    letter-spacing: 10px;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    height: 50px;
+    padding-top: 25px;
+}
+
+.game_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 100px);
+    margin-top: 25px;
+}
+
+.puzzle_container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.puzzle_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 3em;
+    width: 3rem;
+    border: 2px solid #d3d6da;
+    margin: 2px;
+    text-align: center;
+    line-height: 3rem;
+    font-weight: 900;
+}
+
+.keyboard_container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.keyboard_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 6px;
+    width: 100%;
+}
+
+.key {
+    font: inherit;
+    font-weight: 900;
+    font-size: .75rem;
+    color: black;
+    background: #d3d6da;
+    border: 2px transparent solid;
+    border-radius: 4px;
+    margin-right: 3px;
+    margin-left: 3px;
+    height: 60px;
+    padding: 5px;
+    min-width: 33px;
+}
+
+.selected {
+    border: 2px solid black;
+}
+
+.correct {
+    background: #6aaa64;
+    color: white;
+    border: 2px transparent solid;
+}
+
+.discovered {
+    background: #cab458;
+    color: white;
+    border: 2px transparent solid;
+}
+
+.wrong {
+    background: #787c7e;
+    color: white;
+    border: 2px transparent solid;
+}
