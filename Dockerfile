@@ -7,4 +7,4 @@ COPY script.js script.js
 COPY style.css style.css
 COPY words.txt words.txt
 
-CMD ["php", "-S", "0.0.0.0:80"]
+CMD ["php", "-S", "0.0.0.0:8080"]
